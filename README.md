@@ -11,19 +11,29 @@ This project demonstrates how to build an ELT (Extract, Load, Transform) data pi
 
 ## Architecture
 
-```mermaid
-graph LR
-    A[Source Data (CSV)<br><img src="https://via.placeholder.com/20?text=📄" alt="File Icon"/>] --> B[Upload to GCP Cloud Storage<br><img src="https://via.placeholder.com/20?text=☁️" alt="Cloud Icon"/>]
-    B --> C[Extract & Load to BigQuery<br><img src="https://via.placeholder.com/20?text=📊" alt="Database Icon"/>]
-    C --> D[Raw Data Quality Check (Soda)<br><img src="https://via.placeholder.com/20?text=✅" alt="Checkmark Icon"/>]
-    D --> E[Transform with dbt<br><img src="https://via.placeholder.com/20?text=⚙️" alt="Gear Icon"/>]
-    E --> F[Transformed Data Quality Check (Soda)<br><img src="https://via.placeholder.com/20?text=✅" alt="Checkmark Icon"/>]
+### Workflow
 
-    subgraph GCP
-        B
-        C
-    end
+- **Extract**: Verify and retrieve the hotel_bookings.csv file from GCS.
+- **Load**: Load raw CSV data into a BigQuery raw_bookings staging table.
+- **Transform**:
+  - Use dbt and Cosmos to create dimensional and fact tables in the transform layer.
+  - Apply surrogate keys and handle NULLs with COALESCE for data consistency.
+- **Quality Check**: Validate raw data with Soda, followed by comprehensive checks on transformed tables.
+- **Orchestration**: Manage the pipeline execution sequence with Airflow and Astro.
 
-    class A,external;
-    class F,external;
-```
+### Data Layers
+
+- **Staging Layer**: Raw hotel_bookings.csv data loaded into raw_bookings in BigQuery.
+- **Transform Layer**: Cleaned and transformed tables (e.g., dim_date, fct_bookings) created by dbt.
+  ![Hotel_star_schema.png](Hotel_star_schema.png)
+
+### **Requirements**
+
+- **Google Cloud Platform (GCP)**:
+  - **Cloud Storage**: Stores the raw hotel_bookings.csv file.
+  - **BigQuery**: Hosts the staging, transformed, and reporting tables.
+- **Apache Airflow**: Orchestrates the pipeline with task scheduling and dependencies, enhanced by Astronomer Astro for a containerized environment.
+- **dbt (Data Build Tool)**: Transforms data into analytics-ready tables using SQL models, integrated via Cosmos.
+- **Cosmos**: Extends Airflow to run dbt projects, managing the transform layer efficiently.
+- **Soda**: Ensures data quality with schema and validity checks on raw and transformed data.
+- **Astronomer Astro**: Provides a managed Airflow environment with Docker support for scalability.
