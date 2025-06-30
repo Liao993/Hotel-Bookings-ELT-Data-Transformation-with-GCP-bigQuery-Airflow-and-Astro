@@ -25,7 +25,7 @@ This project demonstrates how to build an ELT (Extract, Load, Transform) data pi
 
 - **Staging Layer**: Raw hotel_bookings.csv data loaded into raw_bookings in BigQuery.
 - **Transform Layer**: Cleaned and transformed tables (e.g., dim_date, fct_bookings) created by dbt.
-  ![Hotel_star_schema.png](Hotel_star_schema.png)
+  ![Hotel_star_schema.png](./Hotel_star_schema.png)
 
 ### **Requirements**
 
