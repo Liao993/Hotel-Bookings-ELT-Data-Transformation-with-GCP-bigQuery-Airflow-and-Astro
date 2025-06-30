@@ -1,0 +1,28 @@
+# dim_entity.yml
+checks for dim_entity:
+  # Check fails when required columns are missing, or when data types are incorrect
+  - schema:
+      fail:
+        when required column missing: [entity_id, company, agent]
+        when wrong column type:
+          entity_id: string
+          company: string
+          agent: string
+
+  # Check fails when entity_id is not unique
+  - duplicate_count(entity_id) = 0:
+      name: All entity_ids are unique
+
+  # Check fails when any NULL values exist in entity_id
+  - missing_count(entity_id) = 0:
+      name: All entities have a key
+
+  # Check fails when company contains unexpected values (optional, based on data)
+  - invalid_count(company) < 10: # Allow a small number of unexpected values as a tolerance
+      name: Most companies are valid
+      valid values: ["Unknown", "1", "2", "3", "4", "5"] # Example; adjust based on your data (e.g., company IDs)
+
+  # Check fails when agent contains unexpected values (optional, based on data)
+  - invalid_count(agent) < 10: # Allow a small number of unexpected values as a tolerance
+      name: Most agents are valid
+      valid values: ["Unknown", "1", "2", "3", "4", "5", "6", "7", "8", "9"] # Example; adjust based on your data (e.g., agent IDs)

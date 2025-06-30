@@ -1,0 +1,113 @@
+# fct_bookings.yml
+checks for fct_bookings:
+  # Check fails when required columns are missing, or when data types are incorrect
+  - schema:
+      fail:
+        when required column missing:
+          [
+            booking_id,
+            date_id,
+            hotel_id,
+            guest_id,
+            booking_details_id,
+            entity_id,
+            is_canceled,
+            lead_time,
+            stays_in_weekend_nights,
+            stays_in_week_nights,
+            adults,
+            children,
+            babies,
+            booking_changes,
+            previous_cancellations,
+            previous_bookings_not_canceled,
+            days_in_waiting_list,
+            adr,
+            required_car_parking_spaces,
+            total_of_special_requests,
+            reservation_status_date,
+          ]
+        when wrong column type:
+          booking_id: string
+          date_id: string
+          hotel_id: string
+          guest_id: string
+          booking_details_id: string
+          entity_id: string
+          is_canceled: boolean
+          lead_time: integer
+          stays_in_weekend_nights: integer
+          stays_in_week_nights: integer
+          adults: integer
+          children: integer
+          babies: integer
+          booking_changes: integer
+          previous_cancellations: integer
+          previous_bookings_not_canceled: integer
+          days_in_waiting_list: integer
+          adr: float
+          required_car_parking_spaces: integer
+          total_of_special_requests: integer
+          reservation_status_date: date
+
+  # Check fails when booking_id is not unique
+  - duplicate_count(booking_id) = 0:
+      name: All booking_ids are unique
+
+  # Check fails when any NULL values exist in booking_id
+  - missing_count(booking_id) = 0:
+      name: All bookings have a key
+
+  # Check fails when is_canceled is not TRUE or FALSE
+  - invalid_count(is_canceled) = 0:
+      name: All is_canceled values are TRUE or FALSE
+      valid values: [true, false]
+
+  # Check fails when numeric fields are negative
+  - invalid_count(lead_time) = 0:
+      name: All lead times are non-negative
+      valid min: 0
+  - invalid_count(stays_in_weekend_nights) = 0:
+      name: All weekend night stays are non-negative
+      valid min: 0
+  - invalid_count(stays_in_week_nights) = 0:
+      name: All week night stays are non-negative
+      valid min: 0
+  - invalid_count(adults) = 0:
+      name: All adults are non-negative
+      valid min: 0
+  - invalid_count(children) = 0:
+      name: All children are non-negative
+      valid min: 0
+  - invalid_count(babies) = 0:
+      name: All babies are non-negative
+      valid min: 0
+  - invalid_count(booking_changes) = 0:
+      name: All booking changes are non-negative
+      valid min: 0
+  - invalid_count(previous_cancellations) = 0:
+      name: All previous cancellations are non-negative
+      valid min: 0
+  - invalid_count(previous_bookings_not_canceled) = 0:
+      name: All previous non-canceled bookings are non-negative
+      valid min: 0
+  - invalid_count(days_in_waiting_list) = 0:
+      name: All waiting days are non-negative
+      valid min: 0
+  - invalid_count(required_car_parking_spaces) = 0:
+      name: All parking spaces are non-negative
+      valid min: 0
+  - invalid_count(total_of_special_requests) = 0:
+      name: All special requests are non-negative
+      valid min: 0
+
+  # Check fails when adr (average daily rate) is negative
+  - invalid_count(adr) = 0:
+      name: All ADRs are non-negative
+      valid min: 0
+
+  # Check fails when reservation_status_date is invalid (optional, based on data range)
+  - invalid_count(reservation_status_date) = 0:
+      name: All reservation dates are valid
+      valid min: "2015-01-01" # Adjust based on your data range
+      valid max: "2025-12-31" # Adjust based on your data range

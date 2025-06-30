@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: bookings
+    database: hotel-bookings-de # Put the project id!
+
+    tables:
+      - name: raw_bookings
+      - name: country

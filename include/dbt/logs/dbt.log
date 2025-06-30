@@ -1,0 +1,1099 @@
+[0m23:33:42.259079 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc90711c1f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc905667310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc905667280>]}
+
+
+============================== 23:33:42.261735 | 1a99a3e8-03f8-463d-ab0e-a26772132264 ==============================
+[0m23:33:42.261735 [info ] [MainThread]: Running with dbt=1.8.7
+[0m23:33:42.262949 [debug] [MainThread]: running dbt with arguments {'send_anonymous_usage_stats': 'True', 'cache_selected_only': 'False', 'printer_width': '80', 'no_print': 'None', 'quiet': 'False', 'target_path': 'None', 'profiles_dir': '/usr/local/airflow/include/dbt', 'log_path': '/usr/local/airflow/include/dbt/logs', 'debug': 'False', 'introspect': 'True', 'warn_error': 'None', 'version_check': 'True', 'log_cache_events': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'use_colors': 'True', 'partial_parse': 'True', 'fail_fast': 'False', 'static_parser': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'empty': 'None', 'write_json': 'True', 'log_format': 'default', 'invocation_command': 'dbt deps'}
+[0m23:33:43.155418 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '1a99a3e8-03f8-463d-ab0e-a26772132264', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc905552770>]}
+[0m23:33:43.247662 [debug] [MainThread]: Set downloads directory='/tmp/dbt-downloads-s57pz1zu'
+[0m23:33:43.252245 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m23:33:43.601068 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m23:33:43.603938 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m23:33:43.740828 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m23:33:43.777986 [info ] [MainThread]: Updating lock file in file path: /usr/local/airflow/include/dbt/package-lock.yml
+[0m23:33:43.785862 [debug] [MainThread]: Set downloads directory='/tmp/dbt-downloads-ru80_ctg'
+[0m23:33:43.805837 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m23:33:45.962222 [info ] [MainThread]: Installed from version 1.3.0
+[0m23:33:45.972348 [info ] [MainThread]: Up to date!
+[0m23:33:45.998180 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '1a99a3e8-03f8-463d-ab0e-a26772132264', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc90583aef0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc9055527a0>]}
+[0m23:33:46.092585 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 3.9156485, "process_user_time": 3.722261, "process_kernel_time": 2.219204, "process_mem_max_rss": "106700", "process_in_blocks": "18776", "process_out_blocks": "734"}
+[0m23:33:46.098206 [debug] [MainThread]: Command `dbt deps` succeeded at 23:33:46.096244 after 3.92 seconds
+[0m23:33:46.102019 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc90711c1f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc906b2c700>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc905550c40>]}
+[0m23:33:46.105843 [debug] [MainThread]: Flushing usage events
+[0m23:41:15.727997 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3b6d02c220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3b6b52b430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3b6b52b3d0>]}
+
+
+============================== 23:41:15.731130 | 54413b98-ea50-43c0-931a-95fda2813a7c ==============================
+[0m23:41:15.731130 [info ] [MainThread]: Running with dbt=1.8.7
+[0m23:41:15.732494 [debug] [MainThread]: running dbt with arguments {'log_format': 'default', 'introspect': 'True', 'quiet': 'False', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'write_json': 'True', 'warn_error': 'None', 'printer_width': '80', 'log_path': '/usr/local/airflow/include/dbt/logs', 'target_path': 'None', 'empty': 'False', 'use_colors': 'True', 'cache_selected_only': 'False', 'invocation_command': 'dbt run --profiles-dir /usr/local/airflow/include/dbt/', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'log_cache_events': 'False', 'no_print': 'None', 'profiles_dir': '/usr/local/airflow/include/dbt/', 'indirect_selection': 'eager', 'debug': 'False', 'partial_parse': 'True', 'fail_fast': 'False', 'version_check': 'True', 'use_experimental_parser': 'False'}
+[0m23:41:19.872143 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '54413b98-ea50-43c0-931a-95fda2813a7c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3b6ca37790>]}
+[0m23:41:19.983411 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '54413b98-ea50-43c0-931a-95fda2813a7c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3b6b707670>]}
+[0m23:41:19.986677 [info ] [MainThread]: Registered adapter: bigquery=1.8.2
+[0m23:41:20.484992 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m23:41:20.494276 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m23:41:20.498379 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '54413b98-ea50-43c0-931a-95fda2813a7c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3b47e420b0>]}
+[0m23:41:22.926905 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.bookings
+[0m23:41:22.950283 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '54413b98-ea50-43c0-931a-95fda2813a7c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3b47fa3820>]}
+[0m23:41:23.235633 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '54413b98-ea50-43c0-931a-95fda2813a7c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3b47b3dbd0>]}
+[0m23:41:23.238117 [info ] [MainThread]: Found 2 sources, 600 macros
+[0m23:41:23.241038 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '54413b98-ea50-43c0-931a-95fda2813a7c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3b47b3f400>]}
+[0m23:41:23.245733 [info ] [MainThread]: 
+[0m23:41:23.248318 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m23:41:23.252012 [debug] [MainThread]: Command end result
+[0m23:41:23.350419 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 7.693203, "process_user_time": 8.078458, "process_kernel_time": 2.641463, "process_mem_max_rss": "240364", "process_in_blocks": "16640", "process_out_blocks": "3589"}
+[0m23:41:23.351805 [debug] [MainThread]: Command `dbt run` succeeded at 23:41:23.351508 after 7.69 seconds
+[0m23:41:23.352743 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3b6d02c220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3b6ba62e90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3b47a706a0>]}
+[0m23:41:23.353779 [debug] [MainThread]: Flushing usage events
+[0m23:50:09.766962 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1fcf8701c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1fcdd1f400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1fcdd1f3a0>]}
+
+
+============================== 23:50:09.771012 | 64700bec-cf26-46c7-98ac-ced9b4d36e63 ==============================
+[0m23:50:09.771012 [info ] [MainThread]: Running with dbt=1.8.7
+[0m23:50:09.773095 [debug] [MainThread]: running dbt with arguments {'use_experimental_parser': 'False', 'quiet': 'False', 'introspect': 'True', 'fail_fast': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'indirect_selection': 'eager', 'cache_selected_only': 'False', 'target_path': 'None', 'write_json': 'True', 'no_print': 'None', 'warn_error': 'None', 'static_parser': 'True', 'empty': 'False', 'send_anonymous_usage_stats': 'True', 'version_check': 'True', 'printer_width': '80', 'partial_parse': 'True', 'log_format': 'default', 'profiles_dir': '/usr/local/airflow/include/dbt/', 'log_cache_events': 'False', 'use_colors': 'True', 'debug': 'False', 'invocation_command': 'dbt run --profiles-dir /usr/local/airflow/include/dbt/', 'log_path': '/usr/local/airflow/include/dbt/logs'}
+[0m23:50:12.056462 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '64700bec-cf26-46c7-98ac-ced9b4d36e63', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1fab6f5bd0>]}
+[0m23:50:12.154433 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '64700bec-cf26-46c7-98ac-ced9b4d36e63', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1fce71e860>]}
+[0m23:50:12.156623 [info ] [MainThread]: Registered adapter: bigquery=1.8.2
+[0m23:50:12.470235 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m23:50:12.881446 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 6 files added, 0 files changed.
+[0m23:50:12.884038 [debug] [MainThread]: Partial parsing: added file: bookings://models/transform/dim_entity.sql
+[0m23:50:12.885289 [debug] [MainThread]: Partial parsing: added file: bookings://models/transform/dim_date.sql
+[0m23:50:12.887683 [debug] [MainThread]: Partial parsing: added file: bookings://models/transform/dim_hotel_room.sql
+[0m23:50:12.889940 [debug] [MainThread]: Partial parsing: added file: bookings://models/transform/fct_bookings.sql
+[0m23:50:12.892932 [debug] [MainThread]: Partial parsing: added file: bookings://models/transform/dim_guest.sql
+[0m23:50:12.895949 [debug] [MainThread]: Partial parsing: added file: bookings://models/transform/dim_booking_details.sql
+[0m23:50:13.363270 [error] [MainThread]: Encountered an error:
+Compilation Error in model fct_bookings (models/transform/fct_bookings.sql)
+  expected token ',', got 'AS'
+    line 30
+      {{ dbt_utils.generate_surrogate_key([COALESCE(country, 'Unknown'), COALESCE(CAST(is_repeated_guest AS STRING), 'Unknown'), COALESCE(customer_type, 'Unknown')]) }} AS guest_id,
+[0m23:50:13.367007 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 3.7130554, "process_user_time": 6.267374, "process_kernel_time": 1.55981, "process_mem_max_rss": "239368", "process_in_blocks": "272", "process_out_blocks": "6", "command_success": false}
+[0m23:50:13.368813 [debug] [MainThread]: Command `dbt run` failed at 23:50:13.368546 after 3.72 seconds
+[0m23:50:13.370055 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1fcf8701c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1faa4b25c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1faa2882b0>]}
+[0m23:50:13.371434 [debug] [MainThread]: Flushing usage events
+[0m23:56:37.192215 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4f2f31c1c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4f2d867400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4f2d8673a0>]}
+
+
+============================== 23:56:37.195993 | f57f3cc1-4efa-4c40-8803-23a638e32373 ==============================
+[0m23:56:37.195993 [info ] [MainThread]: Running with dbt=1.8.7
+[0m23:56:37.198924 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'write_json': 'True', 'indirect_selection': 'eager', 'use_colors': 'True', 'invocation_command': 'dbt run --profiles-dir /usr/local/airflow/include/dbt/', 'partial_parse': 'True', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'use_experimental_parser': 'False', 'cache_selected_only': 'False', 'static_parser': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True', 'log_format': 'default', 'no_print': 'None', 'quiet': 'False', 'warn_error': 'None', 'empty': 'False', 'log_path': '/usr/local/airflow/include/dbt/logs', 'log_cache_events': 'False', 'debug': 'False', 'introspect': 'True', 'profiles_dir': '/usr/local/airflow/include/dbt/', 'fail_fast': 'False'}
+[0m23:56:39.584471 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f57f3cc1-4efa-4c40-8803-23a638e32373', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4f2f1adc00>]}
+[0m23:56:39.685345 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'f57f3cc1-4efa-4c40-8803-23a638e32373', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4f2da3b220>]}
+[0m23:56:39.687822 [info ] [MainThread]: Registered adapter: bigquery=1.8.2
+[0m23:56:40.139987 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m23:56:40.598675 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 6 files added, 0 files changed.
+[0m23:56:40.600539 [debug] [MainThread]: Partial parsing: added file: bookings://models/transform/fct_bookings.sql
+[0m23:56:40.602205 [debug] [MainThread]: Partial parsing: added file: bookings://models/transform/dim_booking_details.sql
+[0m23:56:40.603655 [debug] [MainThread]: Partial parsing: added file: bookings://models/transform/dim_entity.sql
+[0m23:56:40.606098 [debug] [MainThread]: Partial parsing: added file: bookings://models/transform/dim_date.sql
+[0m23:56:40.607989 [debug] [MainThread]: Partial parsing: added file: bookings://models/transform/dim_hotel_room.sql
+[0m23:56:40.610024 [debug] [MainThread]: Partial parsing: added file: bookings://models/transform/dim_guest.sql
+[0m23:56:41.055614 [error] [MainThread]: Encountered an error:
+Compilation Error in model fct_bookings (models/transform/fct_bookings.sql)
+  expected token ',', got 'AS'
+    line 30
+      {{ dbt_utils.generate_surrogate_key([COALESCE(country, 'Unknown'), COALESCE(CAST(is_repeated_guest AS STRING), 'Unknown'), COALESCE(customer_type, 'Unknown')]) }} AS guest_id,
+[0m23:56:41.058413 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 3.9510553, "process_user_time": 6.412815, "process_kernel_time": 1.361534, "process_mem_max_rss": "231312", "process_out_blocks": "6", "command_success": false, "process_in_blocks": "0"}
+[0m23:56:41.060535 [debug] [MainThread]: Command `dbt run` failed at 23:56:41.060283 after 3.95 seconds
+[0m23:56:41.061967 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4f2f31c1c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4f09e73790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4f09e708b0>]}
+[0m23:56:41.063691 [debug] [MainThread]: Flushing usage events
+[0m23:56:42.137535 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+[0m00:05:05.016648 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efe5fb64220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efe5e007430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efe5e0073d0>]}
+
+
+============================== 00:05:05.026786 | 5ea9ec9c-a5be-4371-aa88-3cc83c3525f4 ==============================
+[0m00:05:05.026786 [info ] [MainThread]: Running with dbt=1.8.7
+[0m00:05:05.029110 [debug] [MainThread]: running dbt with arguments {'log_cache_events': 'False', 'version_check': 'True', 'static_parser': 'True', 'cache_selected_only': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'fail_fast': 'False', 'indirect_selection': 'eager', 'warn_error': 'None', 'invocation_command': 'dbt run --profiles-dir /usr/local/airflow/include/dbt/', 'log_format': 'default', 'use_colors': 'True', 'write_json': 'True', 'send_anonymous_usage_stats': 'True', 'partial_parse': 'True', 'quiet': 'False', 'profiles_dir': '/usr/local/airflow/include/dbt/', 'introspect': 'True', 'no_print': 'None', 'use_experimental_parser': 'False', 'log_path': '/usr/local/airflow/include/dbt/logs', 'empty': 'False', 'printer_width': '80', 'debug': 'False', 'target_path': 'None'}
+[0m00:05:07.104590 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '5ea9ec9c-a5be-4371-aa88-3cc83c3525f4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efe3b9f2140>]}
+[0m00:05:07.187419 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '5ea9ec9c-a5be-4371-aa88-3cc83c3525f4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efe5e3db250>]}
+[0m00:05:07.189554 [info ] [MainThread]: Registered adapter: bigquery=1.8.2
+[0m00:05:07.501671 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m00:05:07.875774 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 6 files added, 0 files changed.
+[0m00:05:07.876947 [debug] [MainThread]: Partial parsing: added file: bookings://models/transform/dim_booking_details.sql
+[0m00:05:07.877826 [debug] [MainThread]: Partial parsing: added file: bookings://models/transform/dim_hotel_room.sql
+[0m00:05:07.878719 [debug] [MainThread]: Partial parsing: added file: bookings://models/transform/dim_date.sql
+[0m00:05:07.879563 [debug] [MainThread]: Partial parsing: added file: bookings://models/transform/dim_entity.sql
+[0m00:05:07.880422 [debug] [MainThread]: Partial parsing: added file: bookings://models/transform/dim_guest.sql
+[0m00:05:07.881218 [debug] [MainThread]: Partial parsing: added file: bookings://models/transform/fct_bookings.sql
+[0m00:05:08.339630 [error] [MainThread]: Encountered an error:
+Compilation Error in model dim_guest (models/transform/dim_guest.sql)
+  expected token ',', got 'AS'
+    line 8
+      COALESCE(CAST(is_repeated_guest AS STRING), 'Unknown'),
+[0m00:05:08.341970 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 3.4069304, "process_user_time": 5.730262, "process_kernel_time": 1.622052, "process_mem_max_rss": "233480", "process_out_blocks": "6", "command_success": false, "process_in_blocks": "0"}
+[0m00:05:08.343595 [debug] [MainThread]: Command `dbt run` failed at 00:05:08.343309 after 3.41 seconds
+[0m00:05:08.344889 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efe5fb64220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efe3a57c130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efe3a57c310>]}
+[0m00:05:08.346114 [debug] [MainThread]: Flushing usage events
+[0m00:06:53.712743 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f778ba14220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7789e77430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7789e773d0>]}
+
+
+============================== 00:06:53.715872 | 969214a1-46b8-48b5-ba60-0f29f8f1d75b ==============================
+[0m00:06:53.715872 [info ] [MainThread]: Running with dbt=1.8.7
+[0m00:06:53.717413 [debug] [MainThread]: running dbt with arguments {'write_json': 'True', 'warn_error': 'None', 'no_print': 'None', 'version_check': 'True', 'cache_selected_only': 'False', 'partial_parse': 'True', 'quiet': 'False', 'introspect': 'True', 'target_path': 'None', 'use_experimental_parser': 'False', 'profiles_dir': '/usr/local/airflow/include/dbt/', 'use_colors': 'True', 'send_anonymous_usage_stats': 'True', 'printer_width': '80', 'fail_fast': 'False', 'log_path': '/usr/local/airflow/include/dbt/logs', 'log_format': 'default', 'indirect_selection': 'eager', 'static_parser': 'True', 'log_cache_events': 'False', 'empty': 'False', 'invocation_command': 'dbt run --profiles-dir /usr/local/airflow/include/dbt/', 'debug': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])'}
+[0m00:06:55.545312 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '969214a1-46b8-48b5-ba60-0f29f8f1d75b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f778b89dc60>]}
+[0m00:06:55.669696 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '969214a1-46b8-48b5-ba60-0f29f8f1d75b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f778a04b670>]}
+[0m00:06:55.671632 [info ] [MainThread]: Registered adapter: bigquery=1.8.2
+[0m00:06:55.976195 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m00:06:56.425353 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 6 files added, 0 files changed.
+[0m00:06:56.427001 [debug] [MainThread]: Partial parsing: added file: bookings://models/transform/dim_hotel_room.sql
+[0m00:06:56.428674 [debug] [MainThread]: Partial parsing: added file: bookings://models/transform/dim_entity.sql
+[0m00:06:56.430250 [debug] [MainThread]: Partial parsing: added file: bookings://models/transform/fct_bookings.sql
+[0m00:06:56.431860 [debug] [MainThread]: Partial parsing: added file: bookings://models/transform/dim_date.sql
+[0m00:06:56.433443 [debug] [MainThread]: Partial parsing: added file: bookings://models/transform/dim_guest.sql
+[0m00:06:56.434876 [debug] [MainThread]: Partial parsing: added file: bookings://models/transform/dim_booking_details.sql
+[0m00:06:56.982783 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.bookings.dim_hotel_room' (models/transform/dim_hotel_room.sql) depends on a source named 'bookings.raw_bookings' which was not found
+[0m00:06:56.986020 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 3.3528078, "process_user_time": 5.379723, "process_kernel_time": 1.424498, "process_mem_max_rss": "233896", "process_out_blocks": "6", "command_success": false, "process_in_blocks": "0"}
+[0m00:06:56.987861 [debug] [MainThread]: Command `dbt run` failed at 00:06:56.987607 after 3.35 seconds
+[0m00:06:56.990601 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f778ba14220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f77665da680>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f77665da5f0>]}
+[0m00:06:56.992242 [debug] [MainThread]: Flushing usage events
+[0m00:10:55.846663 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f17fefd41c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f17fd45b400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f17fd45b3a0>]}
+
+
+============================== 00:10:55.851270 | 655d976c-252d-4512-b14b-c0134194e455 ==============================
+[0m00:10:55.851270 [info ] [MainThread]: Running with dbt=1.8.7
+[0m00:10:55.853955 [debug] [MainThread]: running dbt with arguments {'cache_selected_only': 'False', 'target_path': 'None', 'empty': 'False', 'debug': 'False', 'static_parser': 'True', 'introspect': 'True', 'send_anonymous_usage_stats': 'True', 'log_cache_events': 'False', 'indirect_selection': 'eager', 'log_format': 'default', 'no_print': 'None', 'version_check': 'True', 'warn_error': 'None', 'printer_width': '80', 'partial_parse': 'True', 'quiet': 'False', 'invocation_command': 'dbt run --profiles-dir /usr/local/airflow/include/dbt/', 'fail_fast': 'False', 'profiles_dir': '/usr/local/airflow/include/dbt/', 'use_experimental_parser': 'False', 'write_json': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'log_path': '/usr/local/airflow/include/dbt/logs', 'use_colors': 'True'}
+[0m00:10:57.927622 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '655d976c-252d-4512-b14b-c0134194e455', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f17d9fa59c0>]}
+[0m00:10:58.014588 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '655d976c-252d-4512-b14b-c0134194e455', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f17fd82b220>]}
+[0m00:10:58.016511 [info ] [MainThread]: Registered adapter: bigquery=1.8.2
+[0m00:10:58.300629 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m00:10:58.674149 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 6 files added, 0 files changed.
+[0m00:10:58.675503 [debug] [MainThread]: Partial parsing: added file: bookings://models/transform/dim_hotel_room.sql
+[0m00:10:58.676588 [debug] [MainThread]: Partial parsing: added file: bookings://models/transform/fct_bookings.sql
+[0m00:10:58.677444 [debug] [MainThread]: Partial parsing: added file: bookings://models/transform/dim_guest.sql
+[0m00:10:58.678320 [debug] [MainThread]: Partial parsing: added file: bookings://models/transform/dim_date.sql
+[0m00:10:58.679250 [debug] [MainThread]: Partial parsing: added file: bookings://models/transform/dim_booking_details.sql
+[0m00:10:58.680071 [debug] [MainThread]: Partial parsing: added file: bookings://models/transform/dim_entity.sql
+[0m00:10:59.190165 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.bookings.dim_hotel_room' (models/transform/dim_hotel_room.sql) depends on a source named 'bookings.raw_bookings' which was not found
+[0m00:10:59.193596 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 3.4701514, "process_user_time": 5.926493, "process_kernel_time": 1.226351, "process_mem_max_rss": "231508", "process_out_blocks": "6", "command_success": false, "process_in_blocks": "0"}
+[0m00:10:59.195605 [debug] [MainThread]: Command `dbt run` failed at 00:10:59.195318 after 3.47 seconds
+[0m00:10:59.197430 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f17fefd41c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f17d9c5e620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f17d9c5e590>]}
+[0m00:10:59.200527 [debug] [MainThread]: Flushing usage events
+[0m00:13:28.347394 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa1b9a70190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa1b7f0f3a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa1b7f0f340>]}
+
+
+============================== 00:13:28.351329 | 0b285322-5cc5-4a1f-ae97-0f0393dda7d1 ==============================
+[0m00:13:28.351329 [info ] [MainThread]: Running with dbt=1.8.7
+[0m00:13:28.353522 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'use_colors': 'True', 'empty': 'False', 'invocation_command': 'dbt run --profiles-dir /usr/local/airflow/include/dbt/', 'cache_selected_only': 'False', 'debug': 'False', 'write_json': 'True', 'version_check': 'True', 'target_path': 'None', 'fail_fast': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'send_anonymous_usage_stats': 'True', 'partial_parse': 'True', 'introspect': 'True', 'warn_error': 'None', 'profiles_dir': '/usr/local/airflow/include/dbt/', 'log_format': 'default', 'use_experimental_parser': 'False', 'quiet': 'False', 'no_print': 'None', 'static_parser': 'True', 'log_path': '/usr/local/airflow/include/dbt/logs'}
+[0m00:13:30.160335 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '0b285322-5cc5-4a1f-ae97-0f0393dda7d1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa1999eae90>]}
+[0m00:13:30.251013 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '0b285322-5cc5-4a1f-ae97-0f0393dda7d1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa1b8471330>]}
+[0m00:13:30.252595 [info ] [MainThread]: Registered adapter: bigquery=1.8.2
+[0m00:13:30.597595 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m00:13:31.392036 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 6 files added, 1 files changed.
+[0m00:13:31.394788 [debug] [MainThread]: Partial parsing: added file: bookings://models/transform/dim_date.sql
+[0m00:13:31.396504 [debug] [MainThread]: Partial parsing: added file: bookings://models/transform/dim_guest.sql
+[0m00:13:31.398288 [debug] [MainThread]: Partial parsing: added file: bookings://models/transform/dim_entity.sql
+[0m00:13:31.401116 [debug] [MainThread]: Partial parsing: added file: bookings://models/transform/dim_hotel_room.sql
+[0m00:13:31.403115 [debug] [MainThread]: Partial parsing: added file: bookings://models/transform/fct_bookings.sql
+[0m00:13:31.405103 [debug] [MainThread]: Partial parsing: added file: bookings://models/transform/dim_booking_details.sql
+[0m00:13:31.407335 [debug] [MainThread]: Partial parsing: updated file: bookings://models/sources/sources.yml
+[0m00:13:32.395274 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '0b285322-5cc5-4a1f-ae97-0f0393dda7d1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa19840cb20>]}
+[0m00:13:32.626206 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '0b285322-5cc5-4a1f-ae97-0f0393dda7d1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa1986c4400>]}
+[0m00:13:32.627701 [info ] [MainThread]: Found 6 models, 2 sources, 600 macros
+[0m00:13:32.629037 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0b285322-5cc5-4a1f-ae97-0f0393dda7d1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa1986c6020>]}
+[0m00:13:32.633253 [info ] [MainThread]: 
+[0m00:13:32.635478 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m00:13:32.648297 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_hotel-bookings-de'
+[0m00:13:32.649821 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:13:33.901314 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_hotel-bookings-de, now list_hotel-bookings-de_bookings)
+[0m00:13:33.903137 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m00:13:34.547489 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0b285322-5cc5-4a1f-ae97-0f0393dda7d1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa1999b3b50>]}
+[0m00:13:34.550658 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m00:13:34.553536 [info ] [MainThread]: 
+[0m00:13:34.572745 [debug] [Thread-1 (]: Began running node model.bookings.dim_booking_details
+[0m00:13:34.575197 [info ] [Thread-1 (]: 1 of 6 START sql table model bookings.dim_booking_details ...................... [RUN]
+[0m00:13:34.577325 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_hotel-bookings-de_bookings, now model.bookings.dim_booking_details)
+[0m00:13:34.580140 [debug] [Thread-1 (]: Began compiling node model.bookings.dim_booking_details
+[0m00:13:34.608370 [debug] [Thread-1 (]: Writing injected SQL for node "model.bookings.dim_booking_details"
+[0m00:13:34.625169 [debug] [Thread-1 (]: Began executing node model.bookings.dim_booking_details
+[0m00:13:34.680964 [debug] [Thread-1 (]: Writing runtime sql for node "model.bookings.dim_booking_details"
+[0m00:13:34.689890 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m00:13:34.756353 [debug] [Thread-1 (]: On model.bookings.dim_booking_details: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "bookings", "target_name": "dev", "node_id": "model.bookings.dim_booking_details"} */
+
+  
+    
+
+    create or replace table `hotel-bookings-de`.`bookings`.`dim_booking_details`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      -- dim_booking_details.sql
+
+WITH booking_details_cte AS (
+  SELECT DISTINCT
+    COALESCE(market_segment, 'Unknown') AS market_segment_cleaned,
+    COALESCE(distribution_channel, 'Unknown') AS distribution_channel_cleaned,
+    COALESCE(meal, 'Unknown') AS meal_cleaned,
+    COALESCE(deposit_type, 'Unknown') AS deposit_type_cleaned,
+    COALESCE(reservation_status, 'Unknown') AS reservation_status_cleaned
+  FROM `hotel-bookings-de`.`bookings`.`raw_bookings`
+),
+booking_detail_keys AS (
+  SELECT
+    to_hex(md5(cast(coalesce(cast(market_segment_cleaned as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(distribution_channel_cleaned as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(meal_cleaned as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(deposit_type_cleaned as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(reservation_status_cleaned as string), '_dbt_utils_surrogate_key_null_') as string))) AS booking_detail_id,
+    market_segment_cleaned AS market_segment,
+    distribution_channel_cleaned AS distribution_channel,
+    meal_cleaned AS meal,
+    deposit_type_cleaned AS deposit_type,
+    reservation_status_cleaned AS reservation_status
+  FROM booking_details_cte
+)
+
+SELECT
+  booking_detail_id,
+  market_segment,
+  distribution_channel,
+  meal,
+  deposit_type,
+  reservation_status
+FROM booking_detail_keys
+    );
+  
+[0m00:13:35.577015 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=hotel-bookings-de&j=bq:US:58860773-c65c-4f2c-b8e1-9d9a885b7ae9&page=queryresults
+[0m00:13:37.811307 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0b285322-5cc5-4a1f-ae97-0f0393dda7d1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa1999ea320>]}
+[0m00:13:37.814234 [info ] [Thread-1 (]: 1 of 6 OK created sql table model bookings.dim_booking_details ................. [[32mCREATE TABLE (212.0 rows, 5.1 MiB processed)[0m in 3.23s]
+[0m00:13:37.817410 [debug] [Thread-1 (]: Finished running node model.bookings.dim_booking_details
+[0m00:13:37.820102 [debug] [Thread-1 (]: Began running node model.bookings.dim_date
+[0m00:13:37.822028 [info ] [Thread-1 (]: 2 of 6 START sql table model bookings.dim_date ................................. [RUN]
+[0m00:13:37.825315 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.bookings.dim_booking_details, now model.bookings.dim_date)
+[0m00:13:37.827676 [debug] [Thread-1 (]: Began compiling node model.bookings.dim_date
+[0m00:13:37.845290 [debug] [Thread-1 (]: Writing injected SQL for node "model.bookings.dim_date"
+[0m00:13:37.852516 [debug] [Thread-1 (]: Began executing node model.bookings.dim_date
+[0m00:13:37.861839 [debug] [Thread-1 (]: Writing runtime sql for node "model.bookings.dim_date"
+[0m00:13:37.867567 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m00:13:37.917432 [debug] [Thread-1 (]: On model.bookings.dim_date: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "bookings", "target_name": "dev", "node_id": "model.bookings.dim_date"} */
+
+  
+    
+
+    create or replace table `hotel-bookings-de`.`bookings`.`dim_date`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      -- dim_date.sql
+
+WITH date_raw AS (
+  SELECT DISTINCT
+    arrival_date_year,
+    arrival_date_month,
+    arrival_date_week_number,
+    arrival_date_day_of_month,
+    CAST(
+      CONCAT(
+        arrival_date_year,
+        '-',
+        LPAD(
+          CAST(
+            CASE
+              WHEN arrival_date_month = 'January' THEN 1
+              WHEN arrival_date_month = 'February' THEN 2
+              WHEN arrival_date_month = 'March' THEN 3
+              WHEN arrival_date_month = 'April' THEN 4
+              WHEN arrival_date_month = 'May' THEN 5
+              WHEN arrival_date_month = 'June' THEN 6
+              WHEN arrival_date_month = 'July' THEN 7
+              WHEN arrival_date_month = 'August' THEN 8
+              WHEN arrival_date_month = 'September' THEN 9
+              WHEN arrival_date_month = 'October' THEN 10
+              WHEN arrival_date_month = 'November' THEN 11
+              WHEN arrival_date_month = 'December' THEN 12
+              ELSE NULL
+            END AS STRING
+          ),
+          2,
+          '0'
+        ),
+        '-',
+        LPAD(CAST(arrival_date_day_of_month AS STRING), 2, '0')
+      ) AS DATE
+    ) AS joined_full_date
+  FROM `hotel-bookings-de`.`bookings`.`raw_bookings`
+  WHERE arrival_date_year IS NOT NULL
+    AND arrival_date_month IS NOT NULL
+    AND arrival_date_day_of_month IS NOT NULL
+),
+date_cte AS (
+  SELECT
+    to_hex(md5(cast(coalesce(cast(joined_full_date as string), '_dbt_utils_surrogate_key_null_') as string))) AS date_id,
+    *
+  FROM date_raw
+)
+
+SELECT
+  date_id,
+  arrival_date_year,
+  arrival_date_month,
+  arrival_date_week_number,
+  arrival_date_day_of_month,
+  FORMAT_DATE('%y/%m/%d', joined_full_date) AS full_date,
+  EXTRACT(QUARTER FROM joined_full_date) AS quarter,
+  CASE
+    WHEN EXTRACT(DAYOFWEEK FROM joined_full_date) IN (1, 7) THEN TRUE
+    ELSE FALSE
+  END AS is_weekend
+FROM date_cte
+    );
+  
+[0m00:13:38.748508 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=hotel-bookings-de&j=bq:US:b4b4e822-062a-4a7f-9e2c-1e2003240232&page=queryresults
+[0m00:13:40.707600 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0b285322-5cc5-4a1f-ae97-0f0393dda7d1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa1989a0d00>]}
+[0m00:13:40.710487 [info ] [Thread-1 (]: 2 of 6 OK created sql table model bookings.dim_date ............................ [[32mCREATE TABLE (793.0 rows, 3.6 MiB processed)[0m in 2.88s]
+[0m00:13:40.714653 [debug] [Thread-1 (]: Finished running node model.bookings.dim_date
+[0m00:13:40.717442 [debug] [Thread-1 (]: Began running node model.bookings.dim_entity
+[0m00:13:40.719479 [info ] [Thread-1 (]: 3 of 6 START sql table model bookings.dim_entity ............................... [RUN]
+[0m00:13:40.722730 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.bookings.dim_date, now model.bookings.dim_entity)
+[0m00:13:40.725298 [debug] [Thread-1 (]: Began compiling node model.bookings.dim_entity
+[0m00:13:40.743624 [debug] [Thread-1 (]: Writing injected SQL for node "model.bookings.dim_entity"
+[0m00:13:40.750389 [debug] [Thread-1 (]: Began executing node model.bookings.dim_entity
+[0m00:13:40.759715 [debug] [Thread-1 (]: Writing runtime sql for node "model.bookings.dim_entity"
+[0m00:13:40.766106 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m00:13:40.828155 [debug] [Thread-1 (]: On model.bookings.dim_entity: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "bookings", "target_name": "dev", "node_id": "model.bookings.dim_entity"} */
+
+  
+    
+
+    create or replace table `hotel-bookings-de`.`bookings`.`dim_entity`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      -- dim_entity.sql
+
+WITH entity_cte AS (
+  SELECT DISTINCT
+    COALESCE(company, 'Unknown') AS company_cleaned,
+    COALESCE(agent, 'Unknown') AS agent_cleaned
+  FROM `hotel-bookings-de`.`bookings`.`raw_bookings`
+),
+entity_keys AS (
+  SELECT
+    to_hex(md5(cast(coalesce(cast(company_cleaned as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(agent_cleaned as string), '_dbt_utils_surrogate_key_null_') as string))) AS entity_id,
+    company_cleaned AS company,
+    agent_cleaned AS agent
+  FROM entity_cte
+)
+
+SELECT
+  entity_id,
+  company,
+  agent
+FROM entity_keys
+    );
+  
+[0m00:13:41.624122 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=hotel-bookings-de&j=bq:US:8a9d8f4c-6f16-4697-95dc-9313e49164e3&page=queryresults
+[0m00:13:41.932577 [debug] [Thread-1 (]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('No matching signature for function COALESCE\n  Argument types: FLOAT64, STRING\n  Signature: COALESCE([T1, ...])\n    Unable to find common supertype for templated argument <T1>\n      Input types for <T1>: {DOUBLE, STRING} at [17:5]; reason: invalidQuery, location: query, message: No matching signature for function COALESCE\n  Argument types: FLOAT64, STRING\n  Signature: COALESCE([T1, ...])\n    Unable to find common supertype for templated argument <T1>\n      Input types for <T1>: {DOUBLE, STRING} at [17:5]')
+[0m00:13:42.944604 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=hotel-bookings-de&j=bq:US:7cbb56d3-a357-4529-8734-28ca294311a9&page=queryresults
+[0m00:13:43.257753 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=hotel-bookings-de&j=bq:US:7cbb56d3-a357-4529-8734-28ca294311a9&page=queryresults
+[0m00:13:43.304628 [debug] [Thread-1 (]: Database Error in model dim_entity (models/transform/dim_entity.sql)
+  No matching signature for function COALESCE
+    Argument types: FLOAT64, STRING
+    Signature: COALESCE([T1, ...])
+      Unable to find common supertype for templated argument <T1>
+        Input types for <T1>: {DOUBLE, STRING} at [17:5]
+  compiled code at target/run/bookings/models/transform/dim_entity.sql
+[0m00:13:43.306632 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0b285322-5cc5-4a1f-ae97-0f0393dda7d1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa1982098a0>]}
+[0m00:13:43.309004 [error] [Thread-1 (]: 3 of 6 ERROR creating sql table model bookings.dim_entity ...................... [[31mERROR[0m in 2.58s]
+[0m00:13:43.311962 [debug] [Thread-1 (]: Finished running node model.bookings.dim_entity
+[0m00:13:43.314076 [debug] [Thread-1 (]: Began running node model.bookings.dim_guest
+[0m00:13:43.317395 [info ] [Thread-1 (]: 4 of 6 START sql table model bookings.dim_guest ................................ [RUN]
+[0m00:13:43.321387 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.bookings.dim_entity, now model.bookings.dim_guest)
+[0m00:13:43.324756 [debug] [Thread-1 (]: Began compiling node model.bookings.dim_guest
+[0m00:13:43.341207 [debug] [Thread-1 (]: Writing injected SQL for node "model.bookings.dim_guest"
+[0m00:13:43.346322 [debug] [Thread-1 (]: Began executing node model.bookings.dim_guest
+[0m00:13:43.355251 [debug] [Thread-1 (]: Writing runtime sql for node "model.bookings.dim_guest"
+[0m00:13:43.359970 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m00:13:43.410466 [debug] [Thread-1 (]: On model.bookings.dim_guest: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "bookings", "target_name": "dev", "node_id": "model.bookings.dim_guest"} */
+
+  
+    
+
+    create or replace table `hotel-bookings-de`.`bookings`.`dim_guest`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      WITH guest_cte AS (
+  SELECT DISTINCT
+    COALESCE(country, 'Unknown') AS country_cleaned,
+    COALESCE(CAST(is_repeated_guest AS STRING), 'Unknown') AS is_repeated_guest_cleaned,
+    COALESCE(customer_type, 'Unknown') AS customer_type_cleaned
+  FROM `hotel-bookings-de`.`bookings`.`raw_bookings`
+),
+guest_keys AS (
+  SELECT
+    to_hex(md5(cast(coalesce(cast(country_cleaned as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(is_repeated_guest_cleaned as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(customer_type_cleaned as string), '_dbt_utils_surrogate_key_null_') as string))) AS guest_id,
+    country_cleaned,
+    is_repeated_guest_cleaned,
+    customer_type_cleaned
+  FROM guest_cte
+)
+SELECT
+  g.guest_id,
+  COALESCE(c.nicename, 'Unknown') AS country,
+  CAST(g.is_repeated_guest_cleaned AS BOOLEAN) AS is_repeated_guest,
+  g.customer_type_cleaned AS customer_type
+FROM guest_keys g
+LEFT JOIN `hotel-bookings-de`.`bookings`.`country` c
+  ON g.country_cleaned = c.iso3
+    );
+  
+[0m00:13:44.257067 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=hotel-bookings-de&j=bq:US:3bfcf734-c323-4cbe-8bc8-248204fe865c&page=queryresults
+[0m00:13:44.938619 [debug] [Thread-1 (]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('Bad bool value: 0; reason: invalidQuery, location: query, message: Bad bool value: 0')
+[0m00:13:46.424540 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=hotel-bookings-de&j=bq:US:98d0b143-d95a-4dc9-8cba-596781a49cc8&page=queryresults
+[0m00:13:46.974291 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=hotel-bookings-de&j=bq:US:98d0b143-d95a-4dc9-8cba-596781a49cc8&page=queryresults
+[0m00:13:46.980514 [debug] [Thread-1 (]: Database Error in model dim_guest (models/transform/dim_guest.sql)
+  Bad bool value: 0
+  compiled code at target/run/bookings/models/transform/dim_guest.sql
+[0m00:13:46.983041 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0b285322-5cc5-4a1f-ae97-0f0393dda7d1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa1981d9fc0>]}
+[0m00:13:46.986079 [error] [Thread-1 (]: 4 of 6 ERROR creating sql table model bookings.dim_guest ....................... [[31mERROR[0m in 3.66s]
+[0m00:13:46.989903 [debug] [Thread-1 (]: Finished running node model.bookings.dim_guest
+[0m00:13:46.992779 [debug] [Thread-1 (]: Began running node model.bookings.dim_hotel_room
+[0m00:13:46.996657 [info ] [Thread-1 (]: 5 of 6 START sql table model bookings.dim_hotel_room ........................... [RUN]
+[0m00:13:47.000522 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.bookings.dim_guest, now model.bookings.dim_hotel_room)
+[0m00:13:47.002706 [debug] [Thread-1 (]: Began compiling node model.bookings.dim_hotel_room
+[0m00:13:47.020302 [debug] [Thread-1 (]: Writing injected SQL for node "model.bookings.dim_hotel_room"
+[0m00:13:47.027190 [debug] [Thread-1 (]: Began executing node model.bookings.dim_hotel_room
+[0m00:13:47.036334 [debug] [Thread-1 (]: Writing runtime sql for node "model.bookings.dim_hotel_room"
+[0m00:13:47.042303 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m00:13:47.093726 [debug] [Thread-1 (]: On model.bookings.dim_hotel_room: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "bookings", "target_name": "dev", "node_id": "model.bookings.dim_hotel_room"} */
+
+  
+    
+
+    create or replace table `hotel-bookings-de`.`bookings`.`dim_hotel_room`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      -- dim_hotel_room.sql
+
+WITH hotel_cte AS (
+  SELECT DISTINCT
+    to_hex(md5(cast(coalesce(cast(hotel as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(reserved_room_type as string), '_dbt_utils_surrogate_key_null_') as string))) AS hotel_room_id,
+    hotel AS hotel_name,
+    reserved_room_type AS room_type
+  FROM `hotel-bookings-de`.`bookings`.`raw_bookings`
+  WHERE hotel IS NOT NULL
+    AND reserved_room_type IS NOT NULL
+)
+
+SELECT
+  hotel_room_id,
+  hotel_name,
+  room_type
+FROM hotel_cte
+    );
+  
+[0m00:13:47.857372 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=hotel-bookings-de&j=bq:US:c332b7bf-982d-424e-94ad-fbe0419ef53b&page=queryresults
+[0m00:13:49.740456 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0b285322-5cc5-4a1f-ae97-0f0393dda7d1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa19840c940>]}
+[0m00:13:49.744244 [info ] [Thread-1 (]: 5 of 6 OK created sql table model bookings.dim_hotel_room ...................... [[32mCREATE TABLE (18.0 rows, 1.8 MiB processed)[0m in 2.74s]
+[0m00:13:49.748329 [debug] [Thread-1 (]: Finished running node model.bookings.dim_hotel_room
+[0m00:13:49.751258 [debug] [Thread-1 (]: Began running node model.bookings.fct_bookings
+[0m00:13:49.753482 [info ] [Thread-1 (]: 6 of 6 START sql table model bookings.fct_bookings ............................. [RUN]
+[0m00:13:49.756275 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.bookings.dim_hotel_room, now model.bookings.fct_bookings)
+[0m00:13:49.759739 [debug] [Thread-1 (]: Began compiling node model.bookings.fct_bookings
+[0m00:13:49.803588 [debug] [Thread-1 (]: Writing injected SQL for node "model.bookings.fct_bookings"
+[0m00:13:49.807243 [debug] [Thread-1 (]: Began executing node model.bookings.fct_bookings
+[0m00:13:49.812730 [debug] [Thread-1 (]: Writing runtime sql for node "model.bookings.fct_bookings"
+[0m00:13:49.816217 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m00:13:49.864320 [debug] [Thread-1 (]: On model.bookings.fct_bookings: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "bookings", "target_name": "dev", "node_id": "model.bookings.fct_bookings"} */
+
+  
+    
+
+    create or replace table `hotel-bookings-de`.`bookings`.`fct_bookings`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      WITH bookings_cte AS (
+  SELECT DISTINCT
+    -- Preprocessing columns
+    COALESCE(country, 'Unknown') AS country_cleaned,
+    COALESCE(CAST(is_repeated_guest AS STRING), 'Unknown') AS is_repeated_guest_cleaned,
+    COALESCE(customer_type, 'Unknown') AS customer_type_cleaned,
+
+    -- Other preprocessing if needed...
+
+    -- Booking fields below...
+    to_hex(md5(cast(coalesce(cast(date_id as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(hotel_id as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(guest_id as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(booking_details_id as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(entity_id as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(is_canceled as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(lead_time as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(stays_in_weekend_nights as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(stays_in_week_nights as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(adults as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(children as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(babies as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(booking_changes as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(previous_cancellations as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(previous_bookings_not_canceled as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(days_in_waiting_list as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(adr as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(required_car_parking_spaces as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(total_of_special_requests as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(reservation_status_date as string), '_dbt_utils_surrogate_key_null_') as string))) AS booking_id,
+
+    to_hex(md5(cast(coalesce(cast(arrival_date_year as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(arrival_date_month as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(arrival_date_day_of_month as string), '_dbt_utils_surrogate_key_null_') as string))) AS date_id,
+
+    to_hex(md5(cast(coalesce(cast(hotel as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(reserved_room_type as string), '_dbt_utils_surrogate_key_null_') as string))) AS hotel_id,
+
+    to_hex(md5(cast(coalesce(cast(country_cleaned as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(is_repeated_guest_cleaned as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(customer_type_cleaned as string), '_dbt_utils_surrogate_key_null_') as string))) AS guest_id,
+
+    to_hex(md5(cast(coalesce(cast(market_segment as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(distribution_channel as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(meal as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(deposit_type as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(reservation_status as string), '_dbt_utils_surrogate_key_null_') as string))) AS booking_details_id,
+
+    to_hex(md5(cast(coalesce(cast(company as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(agent as string), '_dbt_utils_surrogate_key_null_') as string))) AS entity_id,
+
+    -- Keep original columns for SELECT
+    is_canceled,
+    lead_time,
+    stays_in_weekend_nights,
+    stays_in_week_nights,
+    adults,
+    children,
+    babies,
+    booking_changes,
+    previous_cancellations,
+    previous_bookings_not_canceled,
+    days_in_waiting_list,
+    adr,
+    required_car_parking_spaces,
+    total_of_special_requests,
+    reservation_status_date
+  FROM `hotel-bookings-de`.`bookings`.`raw_bookings`
+)
+SELECT *
+FROM bookings_cte
+    );
+  
+[0m00:13:50.670012 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=hotel-bookings-de&j=bq:US:66a2d796-e5ac-4c80-8048-3014831974f3&page=queryresults
+[0m00:13:50.961059 [debug] [Thread-1 (]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('Unrecognized name: date_id at [23:35]; reason: invalidQuery, location: query, message: Unrecognized name: date_id at [23:35]')
+[0m00:13:51.643314 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=hotel-bookings-de&j=bq:US:1368ee96-2ba9-443d-8373-9d9dfbefe536&page=queryresults
+[0m00:13:51.963328 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=hotel-bookings-de&j=bq:US:1368ee96-2ba9-443d-8373-9d9dfbefe536&page=queryresults
+[0m00:13:51.966999 [debug] [Thread-1 (]: Database Error in model fct_bookings (models/transform/fct_bookings.sql)
+  Unrecognized name: date_id at [23:35]
+  compiled code at target/run/bookings/models/transform/fct_bookings.sql
+[0m00:13:51.968560 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0b285322-5cc5-4a1f-ae97-0f0393dda7d1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa1984094b0>]}
+[0m00:13:51.970554 [error] [Thread-1 (]: 6 of 6 ERROR creating sql table model bookings.fct_bookings .................... [[31mERROR[0m in 2.21s]
+[0m00:13:51.974037 [debug] [Thread-1 (]: Finished running node model.bookings.fct_bookings
+[0m00:13:51.980875 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m00:13:51.982417 [debug] [MainThread]: Connection 'model.bookings.fct_bookings' was properly closed.
+[0m00:13:51.984481 [info ] [MainThread]: 
+[0m00:13:51.986093 [info ] [MainThread]: Finished running 6 table models in 0 hours 0 minutes and 19.35 seconds (19.35s).
+[0m00:13:51.995220 [debug] [MainThread]: Command end result
+[0m00:13:52.175509 [info ] [MainThread]: 
+[0m00:13:52.178535 [info ] [MainThread]: [31mCompleted with 3 errors and 0 warnings:[0m
+[0m00:13:52.180436 [info ] [MainThread]: 
+[0m00:13:52.182367 [error] [MainThread]:   Database Error in model dim_entity (models/transform/dim_entity.sql)
+  No matching signature for function COALESCE
+    Argument types: FLOAT64, STRING
+    Signature: COALESCE([T1, ...])
+      Unable to find common supertype for templated argument <T1>
+        Input types for <T1>: {DOUBLE, STRING} at [17:5]
+  compiled code at target/run/bookings/models/transform/dim_entity.sql
+[0m00:13:52.185585 [info ] [MainThread]: 
+[0m00:13:52.188702 [error] [MainThread]:   Database Error in model dim_guest (models/transform/dim_guest.sql)
+  Bad bool value: 0
+  compiled code at target/run/bookings/models/transform/dim_guest.sql
+[0m00:13:52.190923 [info ] [MainThread]: 
+[0m00:13:52.193225 [error] [MainThread]:   Database Error in model fct_bookings (models/transform/fct_bookings.sql)
+  Unrecognized name: date_id at [23:35]
+  compiled code at target/run/bookings/models/transform/fct_bookings.sql
+[0m00:13:52.195770 [info ] [MainThread]: 
+[0m00:13:52.198044 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=3 SKIP=0 TOTAL=6
+[0m00:13:52.204355 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 23.956026, "process_user_time": 8.249697, "process_kernel_time": 1.488889, "process_mem_max_rss": "241604", "process_in_blocks": "328", "process_out_blocks": "3854", "command_success": false}
+[0m00:13:52.220574 [debug] [MainThread]: Command `dbt run` failed at 00:13:52.219229 after 23.97 seconds
+[0m00:13:52.223781 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa1b9a70190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa1bad90910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa1981e5b10>]}
+[0m00:13:52.228631 [debug] [MainThread]: Flushing usage events
+[0m00:18:30.095736 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2bbad74250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2bb920f460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2bb920f400>]}
+
+
+============================== 00:18:30.099003 | 8878be43-ddff-4c58-966c-dbcc94089051 ==============================
+[0m00:18:30.099003 [info ] [MainThread]: Running with dbt=1.8.7
+[0m00:18:30.100746 [debug] [MainThread]: running dbt with arguments {'target_path': 'None', 'debug': 'False', 'send_anonymous_usage_stats': 'True', 'indirect_selection': 'eager', 'fail_fast': 'False', 'version_check': 'True', 'log_format': 'default', 'use_colors': 'True', 'log_path': '/usr/local/airflow/include/dbt/logs', 'cache_selected_only': 'False', 'use_experimental_parser': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'empty': 'False', 'introspect': 'True', 'write_json': 'True', 'static_parser': 'True', 'profiles_dir': '/usr/local/airflow/include/dbt/', 'partial_parse': 'True', 'no_print': 'None', 'invocation_command': 'dbt run --profiles-dir /usr/local/airflow/include/dbt/', 'printer_width': '80', 'warn_error': 'None', 'log_cache_events': 'False', 'quiet': 'False'}
+[0m00:18:31.914184 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '8878be43-ddff-4c58-966c-dbcc94089051', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2bba6c5b70>]}
+[0m00:18:32.001777 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '8878be43-ddff-4c58-966c-dbcc94089051', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2bb95eaef0>]}
+[0m00:18:32.003420 [info ] [MainThread]: Registered adapter: bigquery=1.8.2
+[0m00:18:32.231550 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m00:18:32.645601 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 3 files changed.
+[0m00:18:32.646989 [debug] [MainThread]: Partial parsing: updated file: bookings://models/transform/dim_guest.sql
+[0m00:18:32.647969 [debug] [MainThread]: Partial parsing: updated file: bookings://models/transform/fct_bookings.sql
+[0m00:18:32.649008 [debug] [MainThread]: Partial parsing: updated file: bookings://models/transform/dim_entity.sql
+[0m00:18:32.968463 [error] [MainThread]: Encountered an error:
+Compilation Error in model fct_bookings (models/transform/fct_bookings.sql)
+  expected token ',', got 'WHEN'
+    line 8
+      COALESCE(CAST(CASE WHEN is_repeated_guest = 1 THEN TRUE WHEN is_repeated_guest = 0 THEN FALSE ELSE NULL END AS STRING), 'Unknown'),
+[0m00:18:32.971243 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 2.9554808, "process_user_time": 5.398707, "process_kernel_time": 1.129505, "process_mem_max_rss": "230736", "process_out_blocks": "5", "command_success": false, "process_in_blocks": "0"}
+[0m00:18:32.973072 [debug] [MainThread]: Command `dbt run` failed at 00:18:32.972840 after 2.96 seconds
+[0m00:18:32.974324 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2bbad74250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2b957ab6a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2b957ab760>]}
+[0m00:18:32.975711 [debug] [MainThread]: Flushing usage events
+[0m00:18:34.058583 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+[0m00:20:04.575124 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8ee80dc100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8ee655f310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8ee655f2b0>]}
+
+
+============================== 00:20:04.578319 | 9e417809-8afe-4ffa-ae37-5ba1f948ae06 ==============================
+[0m00:20:04.578319 [info ] [MainThread]: Running with dbt=1.8.7
+[0m00:20:04.579751 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'invocation_command': 'dbt run --profiles-dir /usr/local/airflow/include/dbt/', 'log_cache_events': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'cache_selected_only': 'False', 'no_print': 'None', 'send_anonymous_usage_stats': 'True', 'log_format': 'default', 'partial_parse': 'True', 'target_path': 'None', 'fail_fast': 'False', 'version_check': 'True', 'profiles_dir': '/usr/local/airflow/include/dbt/', 'log_path': '/usr/local/airflow/include/dbt/logs', 'empty': 'False', 'use_experimental_parser': 'False', 'introspect': 'True', 'quiet': 'False', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'indirect_selection': 'eager', 'write_json': 'True'}
+[0m00:20:06.347665 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '9e417809-8afe-4ffa-ae37-5ba1f948ae06', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8ee7f69b40>]}
+[0m00:20:06.440910 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '9e417809-8afe-4ffa-ae37-5ba1f948ae06', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8ec3fb2f50>]}
+[0m00:20:06.442989 [info ] [MainThread]: Registered adapter: bigquery=1.8.2
+[0m00:20:06.657330 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m00:20:07.042191 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 3 files changed.
+[0m00:20:07.043702 [debug] [MainThread]: Partial parsing: updated file: bookings://models/transform/dim_entity.sql
+[0m00:20:07.045023 [debug] [MainThread]: Partial parsing: updated file: bookings://models/transform/dim_guest.sql
+[0m00:20:07.046316 [debug] [MainThread]: Partial parsing: updated file: bookings://models/transform/fct_bookings.sql
+[0m00:20:07.364389 [error] [MainThread]: Encountered an error:
+Compilation Error in model dim_entity (models/transform/dim_entity.sql)
+  expected token ',', got 'AS'
+    line 6
+      COALESCE(CAST(company AS STRING), 'Unknown'),
+[0m00:20:07.367625 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 2.8906524, "process_user_time": 5.913348, "process_kernel_time": 1.124701, "process_mem_max_rss": "230576", "process_out_blocks": "5", "command_success": false, "process_in_blocks": "0"}
+[0m00:20:07.369735 [debug] [MainThread]: Command `dbt run` failed at 00:20:07.369300 after 2.89 seconds
+[0m00:20:07.371353 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8ee80dc100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8ec2c1faf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8ec2c1f5b0>]}
+[0m00:20:07.373075 [debug] [MainThread]: Flushing usage events
+[0m00:20:08.453608 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+[0m00:21:40.605922 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1d68d181c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1d6713f400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1d6713f3a0>]}
+
+
+============================== 00:21:40.609937 | 46d5f03a-eb5f-4718-b230-7395d5b5e74c ==============================
+[0m00:21:40.609937 [info ] [MainThread]: Running with dbt=1.8.7
+[0m00:21:40.611507 [debug] [MainThread]: running dbt with arguments {'quiet': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'printer_width': '80', 'empty': 'False', 'use_experimental_parser': 'False', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'log_cache_events': 'False', 'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'target_path': 'None', 'log_path': '/usr/local/airflow/include/dbt/logs', 'debug': 'False', 'version_check': 'True', 'profiles_dir': '/usr/local/airflow/include/dbt/', 'introspect': 'True', 'write_json': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt run --profiles-dir /usr/local/airflow/include/dbt/', 'log_format': 'default', 'warn_error': 'None'}
+[0m00:21:42.505511 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '46d5f03a-eb5f-4718-b230-7395d5b5e74c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1d68ba9c00>]}
+[0m00:21:42.597479 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '46d5f03a-eb5f-4718-b230-7395d5b5e74c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1d6750f220>]}
+[0m00:21:42.599624 [info ] [MainThread]: Registered adapter: bigquery=1.8.2
+[0m00:21:42.827589 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m00:21:43.254862 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 3 files changed.
+[0m00:21:43.256522 [debug] [MainThread]: Partial parsing: updated file: bookings://models/transform/fct_bookings.sql
+[0m00:21:43.257697 [debug] [MainThread]: Partial parsing: updated file: bookings://models/transform/dim_guest.sql
+[0m00:21:43.258763 [debug] [MainThread]: Partial parsing: updated file: bookings://models/transform/dim_entity.sql
+[0m00:21:43.547133 [error] [MainThread]: Encountered an error:
+Compilation Error in model fct_bookings (models/transform/fct_bookings.sql)
+  expected token ',', got 'AS'
+    line 29
+      COALESCE(CAST(company AS STRING), 'Unknown'),
+[0m00:21:43.550752 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 3.0242987, "process_user_time": 5.68832, "process_kernel_time": 1.308515, "process_mem_max_rss": "232352", "process_out_blocks": "5", "command_success": false, "process_in_blocks": "0"}
+[0m00:21:43.552758 [debug] [MainThread]: Command `dbt run` failed at 00:21:43.552500 after 3.03 seconds
+[0m00:21:43.554219 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1d68d181c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1d43896020>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1d43895600>]}
+[0m00:21:43.556209 [debug] [MainThread]: Flushing usage events
+[0m00:23:01.135171 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f62979d4160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6295e53340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6295e532e0>]}
+
+
+============================== 00:23:01.138841 | 02a2faa4-30c2-40c7-ae79-e0c81d3f026f ==============================
+[0m00:23:01.138841 [info ] [MainThread]: Running with dbt=1.8.7
+[0m00:23:01.140851 [debug] [MainThread]: running dbt with arguments {'log_path': '/usr/local/airflow/include/dbt/logs', 'cache_selected_only': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'log_format': 'default', 'indirect_selection': 'eager', 'static_parser': 'True', 'quiet': 'False', 'partial_parse': 'True', 'printer_width': '80', 'empty': 'False', 'invocation_command': 'dbt run --profiles-dir /usr/local/airflow/include/dbt/', 'write_json': 'True', 'debug': 'False', 'no_print': 'None', 'send_anonymous_usage_stats': 'True', 'fail_fast': 'False', 'use_experimental_parser': 'False', 'version_check': 'True', 'target_path': 'None', 'profiles_dir': '/usr/local/airflow/include/dbt/', 'use_colors': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'warn_error': 'None'}
+[0m00:23:03.069582 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '02a2faa4-30c2-40c7-ae79-e0c81d3f026f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6297a61ba0>]}
+[0m00:23:03.176647 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '02a2faa4-30c2-40c7-ae79-e0c81d3f026f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6296223190>]}
+[0m00:23:03.178964 [info ] [MainThread]: Registered adapter: bigquery=1.8.2
+[0m00:23:03.578232 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m00:23:04.030921 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 3 files changed.
+[0m00:23:04.032557 [debug] [MainThread]: Partial parsing: updated file: bookings://models/transform/fct_bookings.sql
+[0m00:23:04.033705 [debug] [MainThread]: Partial parsing: updated file: bookings://models/transform/dim_guest.sql
+[0m00:23:04.034853 [debug] [MainThread]: Partial parsing: updated file: bookings://models/transform/dim_entity.sql
+[0m00:23:04.496589 [error] [MainThread]: Encountered an error:
+Compilation Error in model dim_entity (models/transform/dim_entity.sql)
+  expected token ',', got 'AS'
+    line 6
+      COALESCE(CAST(company AS STRING), 'Unknown'),
+[0m00:23:04.499538 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 3.4615595, "process_user_time": 6.370165, "process_kernel_time": 1.097457, "process_mem_max_rss": "233180", "process_out_blocks": "5", "command_success": false, "process_in_blocks": "0"}
+[0m00:23:04.501256 [debug] [MainThread]: Command `dbt run` failed at 00:23:04.500990 after 3.46 seconds
+[0m00:23:04.502749 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f62979d4160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f627238bcd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f627238bb80>]}
+[0m00:23:04.504048 [debug] [MainThread]: Flushing usage events
+[0m00:26:27.072861 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2513a30190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2511f473a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2511f47340>]}
+
+
+============================== 00:26:27.076433 | 77ca98a0-5b0b-40e8-b663-0f35005bcb07 ==============================
+[0m00:26:27.076433 [info ] [MainThread]: Running with dbt=1.8.7
+[0m00:26:27.077714 [debug] [MainThread]: running dbt with arguments {'invocation_command': 'dbt run --profiles-dir /usr/local/airflow/include/dbt/', 'log_path': '/usr/local/airflow/include/dbt/logs', 'target_path': 'None', 'warn_error': 'None', 'version_check': 'True', 'log_cache_events': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'indirect_selection': 'eager', 'partial_parse': 'True', 'no_print': 'None', 'write_json': 'True', 'debug': 'False', 'introspect': 'True', 'send_anonymous_usage_stats': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/usr/local/airflow/include/dbt/', 'use_experimental_parser': 'False', 'printer_width': '80', 'empty': 'False', 'quiet': 'False', 'log_format': 'default', 'fail_fast': 'False', 'use_colors': 'True'}
+[0m00:26:28.952898 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '77ca98a0-5b0b-40e8-b663-0f35005bcb07', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f25138c1bd0>]}
+[0m00:26:29.079990 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '77ca98a0-5b0b-40e8-b663-0f35005bcb07', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f251290d780>]}
+[0m00:26:29.082329 [info ] [MainThread]: Registered adapter: bigquery=1.8.2
+[0m00:26:29.372873 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m00:26:29.782950 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 3 files changed.
+[0m00:26:29.785040 [debug] [MainThread]: Partial parsing: updated file: bookings://models/transform/fct_bookings.sql
+[0m00:26:29.786724 [debug] [MainThread]: Partial parsing: updated file: bookings://models/transform/dim_guest.sql
+[0m00:26:29.788407 [debug] [MainThread]: Partial parsing: updated file: bookings://models/transform/dim_entity.sql
+[0m00:26:30.364565 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '77ca98a0-5b0b-40e8-b663-0f35005bcb07', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f24ee4f0ca0>]}
+[0m00:26:30.594001 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '77ca98a0-5b0b-40e8-b663-0f35005bcb07', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f24ee6dd8d0>]}
+[0m00:26:30.595446 [info ] [MainThread]: Found 6 models, 2 sources, 600 macros
+[0m00:26:30.596634 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '77ca98a0-5b0b-40e8-b663-0f35005bcb07', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f24ee6ddae0>]}
+[0m00:26:30.600292 [info ] [MainThread]: 
+[0m00:26:30.602603 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m00:26:30.614321 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_hotel-bookings-de'
+[0m00:26:30.615775 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:26:31.347971 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_hotel-bookings-de, now list_hotel-bookings-de_bookings)
+[0m00:26:31.350417 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m00:26:31.947284 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '77ca98a0-5b0b-40e8-b663-0f35005bcb07', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f24ef89bb50>]}
+[0m00:26:31.950306 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m00:26:31.952707 [info ] [MainThread]: 
+[0m00:26:31.963597 [debug] [Thread-1 (]: Began running node model.bookings.dim_booking_details
+[0m00:26:31.966228 [info ] [Thread-1 (]: 1 of 6 START sql table model bookings.dim_booking_details ...................... [RUN]
+[0m00:26:31.970695 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_hotel-bookings-de_bookings, now model.bookings.dim_booking_details)
+[0m00:26:31.974177 [debug] [Thread-1 (]: Began compiling node model.bookings.dim_booking_details
+[0m00:26:32.004836 [debug] [Thread-1 (]: Writing injected SQL for node "model.bookings.dim_booking_details"
+[0m00:26:32.010440 [debug] [Thread-1 (]: Began executing node model.bookings.dim_booking_details
+[0m00:26:32.034159 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m00:26:32.608185 [debug] [Thread-1 (]: Writing runtime sql for node "model.bookings.dim_booking_details"
+[0m00:26:32.613600 [debug] [Thread-1 (]: On model.bookings.dim_booking_details: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "bookings", "target_name": "dev", "node_id": "model.bookings.dim_booking_details"} */
+
+  
+    
+
+    create or replace table `hotel-bookings-de`.`bookings`.`dim_booking_details`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      -- dim_booking_details.sql
+
+WITH booking_details_cte AS (
+  SELECT DISTINCT
+    COALESCE(market_segment, 'Unknown') AS market_segment_cleaned,
+    COALESCE(distribution_channel, 'Unknown') AS distribution_channel_cleaned,
+    COALESCE(meal, 'Unknown') AS meal_cleaned,
+    COALESCE(deposit_type, 'Unknown') AS deposit_type_cleaned,
+    COALESCE(reservation_status, 'Unknown') AS reservation_status_cleaned
+  FROM `hotel-bookings-de`.`bookings`.`raw_bookings`
+),
+booking_detail_keys AS (
+  SELECT
+    to_hex(md5(cast(coalesce(cast(market_segment_cleaned as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(distribution_channel_cleaned as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(meal_cleaned as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(deposit_type_cleaned as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(reservation_status_cleaned as string), '_dbt_utils_surrogate_key_null_') as string))) AS booking_detail_id,
+    market_segment_cleaned AS market_segment,
+    distribution_channel_cleaned AS distribution_channel,
+    meal_cleaned AS meal,
+    deposit_type_cleaned AS deposit_type,
+    reservation_status_cleaned AS reservation_status
+  FROM booking_details_cte
+)
+
+SELECT
+  booking_detail_id,
+  market_segment,
+  distribution_channel,
+  meal,
+  deposit_type,
+  reservation_status
+FROM booking_detail_keys
+    );
+  
+[0m00:26:33.104809 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=hotel-bookings-de&j=bq:US:f772fc38-92c0-4d88-afc1-4f5461642c88&page=queryresults
+[0m00:26:35.165139 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '77ca98a0-5b0b-40e8-b663-0f35005bcb07', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f24ef89bb50>]}
+[0m00:26:35.167856 [info ] [Thread-1 (]: 1 of 6 OK created sql table model bookings.dim_booking_details ................. [[32mCREATE TABLE (212.0 rows, 5.1 MiB processed)[0m in 3.19s]
+[0m00:26:35.171284 [debug] [Thread-1 (]: Finished running node model.bookings.dim_booking_details
+[0m00:26:35.174129 [debug] [Thread-1 (]: Began running node model.bookings.dim_date
+[0m00:26:35.176929 [info ] [Thread-1 (]: 2 of 6 START sql table model bookings.dim_date ................................. [RUN]
+[0m00:26:35.240532 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.bookings.dim_booking_details, now model.bookings.dim_date)
+[0m00:26:35.242558 [debug] [Thread-1 (]: Began compiling node model.bookings.dim_date
+[0m00:26:35.256833 [debug] [Thread-1 (]: Writing injected SQL for node "model.bookings.dim_date"
+[0m00:26:35.263284 [debug] [Thread-1 (]: Began executing node model.bookings.dim_date
+[0m00:26:35.276858 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m00:26:35.838617 [debug] [Thread-1 (]: Writing runtime sql for node "model.bookings.dim_date"
+[0m00:26:35.845400 [debug] [Thread-1 (]: On model.bookings.dim_date: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "bookings", "target_name": "dev", "node_id": "model.bookings.dim_date"} */
+
+  
+    
+
+    create or replace table `hotel-bookings-de`.`bookings`.`dim_date`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      -- dim_date.sql
+
+WITH date_raw AS (
+  SELECT DISTINCT
+    arrival_date_year,
+    arrival_date_month,
+    arrival_date_week_number,
+    arrival_date_day_of_month,
+    CAST(
+      CONCAT(
+        arrival_date_year,
+        '-',
+        LPAD(
+          CAST(
+            CASE
+              WHEN arrival_date_month = 'January' THEN 1
+              WHEN arrival_date_month = 'February' THEN 2
+              WHEN arrival_date_month = 'March' THEN 3
+              WHEN arrival_date_month = 'April' THEN 4
+              WHEN arrival_date_month = 'May' THEN 5
+              WHEN arrival_date_month = 'June' THEN 6
+              WHEN arrival_date_month = 'July' THEN 7
+              WHEN arrival_date_month = 'August' THEN 8
+              WHEN arrival_date_month = 'September' THEN 9
+              WHEN arrival_date_month = 'October' THEN 10
+              WHEN arrival_date_month = 'November' THEN 11
+              WHEN arrival_date_month = 'December' THEN 12
+              ELSE NULL
+            END AS STRING
+          ),
+          2,
+          '0'
+        ),
+        '-',
+        LPAD(CAST(arrival_date_day_of_month AS STRING), 2, '0')
+      ) AS DATE
+    ) AS joined_full_date
+  FROM `hotel-bookings-de`.`bookings`.`raw_bookings`
+  WHERE arrival_date_year IS NOT NULL
+    AND arrival_date_month IS NOT NULL
+    AND arrival_date_day_of_month IS NOT NULL
+),
+date_cte AS (
+  SELECT
+    to_hex(md5(cast(coalesce(cast(joined_full_date as string), '_dbt_utils_surrogate_key_null_') as string))) AS date_id,
+    *
+  FROM date_raw
+)
+
+SELECT
+  date_id,
+  arrival_date_year,
+  arrival_date_month,
+  arrival_date_week_number,
+  arrival_date_day_of_month,
+  FORMAT_DATE('%y/%m/%d', joined_full_date) AS full_date,
+  EXTRACT(QUARTER FROM joined_full_date) AS quarter,
+  CASE
+    WHEN EXTRACT(DAYOFWEEK FROM joined_full_date) IN (1, 7) THEN TRUE
+    ELSE FALSE
+  END AS is_weekend
+FROM date_cte
+    );
+  
+[0m00:26:36.360481 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=hotel-bookings-de&j=bq:US:ab197acb-7eb0-43e0-a082-5dd4a4641d3b&page=queryresults
+[0m00:26:38.811778 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '77ca98a0-5b0b-40e8-b663-0f35005bcb07', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f24ee3e74c0>]}
+[0m00:26:38.815172 [info ] [Thread-1 (]: 2 of 6 OK created sql table model bookings.dim_date ............................ [[32mCREATE TABLE (793.0 rows, 3.6 MiB processed)[0m in 3.57s]
+[0m00:26:38.819155 [debug] [Thread-1 (]: Finished running node model.bookings.dim_date
+[0m00:26:38.822061 [debug] [Thread-1 (]: Began running node model.bookings.dim_entity
+[0m00:26:38.824515 [info ] [Thread-1 (]: 3 of 6 START sql table model bookings.dim_entity ............................... [RUN]
+[0m00:26:38.827731 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.bookings.dim_date, now model.bookings.dim_entity)
+[0m00:26:38.831661 [debug] [Thread-1 (]: Began compiling node model.bookings.dim_entity
+[0m00:26:38.846080 [debug] [Thread-1 (]: Writing injected SQL for node "model.bookings.dim_entity"
+[0m00:26:38.851268 [debug] [Thread-1 (]: Began executing node model.bookings.dim_entity
+[0m00:26:38.861283 [debug] [Thread-1 (]: Writing runtime sql for node "model.bookings.dim_entity"
+[0m00:26:38.866108 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m00:26:38.921737 [debug] [Thread-1 (]: On model.bookings.dim_entity: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "bookings", "target_name": "dev", "node_id": "model.bookings.dim_entity"} */
+
+  
+    
+
+    create or replace table `hotel-bookings-de`.`bookings`.`dim_entity`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      -- dim_entity.sql
+
+WITH prepped_data AS (
+  SELECT
+    COALESCE(CAST(company AS STRING), 'Unknown') AS company_cleaned,
+    COALESCE(CAST(agent AS STRING), 'Unknown') AS agent_cleaned
+  FROM `hotel-bookings-de`.`bookings`.`raw_bookings`
+)
+SELECT
+  to_hex(md5(cast(coalesce(cast(company_cleaned as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(agent_cleaned as string), '_dbt_utils_surrogate_key_null_') as string))) AS entity_id,
+  company_cleaned AS company, 
+  agent_cleaned AS agent     
+FROM prepped_data
+    );
+  
+[0m00:26:39.638442 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=hotel-bookings-de&j=bq:US:1c06d04c-f3b2-4b69-8414-1fe4878c4aaa&page=queryresults
+[0m00:26:41.859526 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '77ca98a0-5b0b-40e8-b663-0f35005bcb07', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f24ee49ebc0>]}
+[0m00:26:41.863014 [info ] [Thread-1 (]: 3 of 6 OK created sql table model bookings.dim_entity .......................... [[32mCREATE TABLE (119.4k rows, 858.2 KiB processed)[0m in 3.03s]
+[0m00:26:41.866353 [debug] [Thread-1 (]: Finished running node model.bookings.dim_entity
+[0m00:26:41.869152 [debug] [Thread-1 (]: Began running node model.bookings.dim_guest
+[0m00:26:41.871574 [info ] [Thread-1 (]: 4 of 6 START sql table model bookings.dim_guest ................................ [RUN]
+[0m00:26:41.874840 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.bookings.dim_entity, now model.bookings.dim_guest)
+[0m00:26:41.877091 [debug] [Thread-1 (]: Began compiling node model.bookings.dim_guest
+[0m00:26:41.898988 [debug] [Thread-1 (]: Writing injected SQL for node "model.bookings.dim_guest"
+[0m00:26:41.908479 [debug] [Thread-1 (]: Began executing node model.bookings.dim_guest
+[0m00:26:41.916620 [debug] [Thread-1 (]: Writing runtime sql for node "model.bookings.dim_guest"
+[0m00:26:41.923009 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m00:26:41.976804 [debug] [Thread-1 (]: On model.bookings.dim_guest: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "bookings", "target_name": "dev", "node_id": "model.bookings.dim_guest"} */
+
+  
+    
+
+    create or replace table `hotel-bookings-de`.`bookings`.`dim_guest`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      WITH guest_cte AS (
+  SELECT DISTINCT
+    to_hex(md5(cast(coalesce(cast(COALESCE(country, 'Unknown') as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(COALESCE(CAST(is_repeated_guest AS STRING), 'Unknown') as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(COALESCE(customer_type, 'Unknown') as string), '_dbt_utils_surrogate_key_null_') as string))) AS guest_id,
+    COALESCE(country, 'Unknown') AS country,
+    is_repeated_guest,
+    COALESCE(customer_type, 'Unknown') AS customer_type
+  FROM `hotel-bookings-de`.`bookings`.`raw_bookings`
+)
+SELECT
+  g.guest_id,
+  COALESCE(c.nicename, 'Unknown') AS country,
+  g.is_repeated_guest,
+  g.customer_type
+FROM guest_cte g
+LEFT JOIN `hotel-bookings-de`.`bookings`.`country` c
+  ON g.country = c.iso3
+    );
+  
+[0m00:26:42.712955 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=hotel-bookings-de&j=bq:US:cff28a6d-7497-4257-aa61-508069840eb9&page=queryresults
+[0m00:26:44.935244 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '77ca98a0-5b0b-40e8-b663-0f35005bcb07', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f24ee4f1360>]}
+[0m00:26:44.938607 [info ] [Thread-1 (]: 4 of 6 OK created sql table model bookings.dim_guest ........................... [[32mCREATE TABLE (448.0 rows, 2.9 MiB processed)[0m in 3.06s]
+[0m00:26:44.942722 [debug] [Thread-1 (]: Finished running node model.bookings.dim_guest
+[0m00:26:44.945506 [debug] [Thread-1 (]: Began running node model.bookings.dim_hotel_room
+[0m00:26:44.947854 [info ] [Thread-1 (]: 5 of 6 START sql table model bookings.dim_hotel_room ........................... [RUN]
+[0m00:26:44.950699 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.bookings.dim_guest, now model.bookings.dim_hotel_room)
+[0m00:26:44.954613 [debug] [Thread-1 (]: Began compiling node model.bookings.dim_hotel_room
+[0m00:26:44.968607 [debug] [Thread-1 (]: Writing injected SQL for node "model.bookings.dim_hotel_room"
+[0m00:26:44.973674 [debug] [Thread-1 (]: Began executing node model.bookings.dim_hotel_room
+[0m00:26:44.981285 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m00:26:45.506928 [debug] [Thread-1 (]: Writing runtime sql for node "model.bookings.dim_hotel_room"
+[0m00:26:45.513522 [debug] [Thread-1 (]: On model.bookings.dim_hotel_room: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "bookings", "target_name": "dev", "node_id": "model.bookings.dim_hotel_room"} */
+
+  
+    
+
+    create or replace table `hotel-bookings-de`.`bookings`.`dim_hotel_room`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      -- dim_hotel_room.sql
+
+WITH hotel_cte AS (
+  SELECT DISTINCT
+    to_hex(md5(cast(coalesce(cast(hotel as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(reserved_room_type as string), '_dbt_utils_surrogate_key_null_') as string))) AS hotel_room_id,
+    hotel AS hotel_name,
+    reserved_room_type AS room_type
+  FROM `hotel-bookings-de`.`bookings`.`raw_bookings`
+  WHERE hotel IS NOT NULL
+    AND reserved_room_type IS NOT NULL
+)
+
+SELECT
+  hotel_room_id,
+  hotel_name,
+  room_type
+FROM hotel_cte
+    );
+  
+[0m00:26:45.984969 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=hotel-bookings-de&j=bq:US:e829054c-5624-40c5-9338-b484fe9d6265&page=queryresults
+[0m00:26:47.895760 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '77ca98a0-5b0b-40e8-b663-0f35005bcb07', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f24ee4f1630>]}
+[0m00:26:47.898979 [info ] [Thread-1 (]: 5 of 6 OK created sql table model bookings.dim_hotel_room ...................... [[32mCREATE TABLE (18.0 rows, 1.8 MiB processed)[0m in 2.95s]
+[0m00:26:47.902813 [debug] [Thread-1 (]: Finished running node model.bookings.dim_hotel_room
+[0m00:26:47.906565 [debug] [Thread-1 (]: Began running node model.bookings.fct_bookings
+[0m00:26:47.908992 [info ] [Thread-1 (]: 6 of 6 START sql table model bookings.fct_bookings ............................. [RUN]
+[0m00:26:47.912604 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.bookings.dim_hotel_room, now model.bookings.fct_bookings)
+[0m00:26:47.915894 [debug] [Thread-1 (]: Began compiling node model.bookings.fct_bookings
+[0m00:26:47.959372 [debug] [Thread-1 (]: Writing injected SQL for node "model.bookings.fct_bookings"
+[0m00:26:47.966329 [debug] [Thread-1 (]: Began executing node model.bookings.fct_bookings
+[0m00:26:47.972575 [debug] [Thread-1 (]: Writing runtime sql for node "model.bookings.fct_bookings"
+[0m00:26:47.977332 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m00:26:48.026654 [debug] [Thread-1 (]: On model.bookings.fct_bookings: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "bookings", "target_name": "dev", "node_id": "model.bookings.fct_bookings"} */
+
+  
+    
+
+    create or replace table `hotel-bookings-de`.`bookings`.`fct_bookings`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      WITH bookings_cte AS (
+  SELECT DISTINCT
+
+    -- Generate date_id
+    to_hex(md5(cast(coalesce(cast('arrival_date_year' as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast('arrival_date_month' as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast('arrival_date_day_of_month' as string), '_dbt_utils_surrogate_key_null_') as string))) AS date_id,
+
+    -- Generate hotel_id
+    to_hex(md5(cast(coalesce(cast('hotel' as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast('reserved_room_type' as string), '_dbt_utils_surrogate_key_null_') as string))) AS hotel_id,
+
+    -- Generate guest_id (casted boolean needs to be in string)
+    to_hex(md5(cast(coalesce(cast(COALESCE(country, 'Unknown') as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(COALESCE(CAST(is_repeated_guest AS STRING), 'Unknown') as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(COALESCE(customer_type, 'Unknown') as string), '_dbt_utils_surrogate_key_null_') as string))) AS guest_id,
+
+    -- Generate booking_details_id
+    to_hex(md5(cast(coalesce(cast(COALESCE(market_segment, 'Unknown') as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(COALESCE(distribution_channel, 'Unknown') as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(COALESCE(meal, 'Unknown') as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(COALESCE(deposit_type, 'Unknown') as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(COALESCE(reservation_status, 'Unknown') as string), '_dbt_utils_surrogate_key_null_') as string))) AS booking_details_id,
+
+    -- Generate entity_id
+    to_hex(md5(cast(coalesce(cast(COALESCE(CAST(company AS STRING), 'Unknown') as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(COALESCE(CAST(agent AS STRING), 'Unknown') as string), '_dbt_utils_surrogate_key_null_') as string))) AS entity_id,
+
+    -- Generate the final booking_id
+    to_hex(md5(cast(coalesce(cast('date_id' as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast('hotel_id' as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast('guest_id' as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast('booking_details_id' as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast('entity_id' as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(CAST(is_canceled AS STRING) as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(CAST(lead_time AS STRING) as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(CAST(stays_in_weekend_nights AS STRING) as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(CAST(stays_in_week_nights AS STRING) as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(CAST(adults AS STRING) as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(CAST(children AS STRING) as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(CAST(babies AS STRING) as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(CAST(booking_changes AS STRING) as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(CAST(previous_cancellations AS STRING) as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(CAST(previous_bookings_not_canceled AS STRING) as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(CAST(days_in_waiting_list AS STRING) as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(CAST(adr AS STRING) as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(CAST(required_car_parking_spaces AS STRING) as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(CAST(total_of_special_requests AS STRING) as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(CAST(reservation_status_date AS STRING) as string), '_dbt_utils_surrogate_key_null_') as string))) AS booking_id,
+
+    -- Measures
+    is_canceled,
+    lead_time,
+    stays_in_weekend_nights,
+    stays_in_week_nights,
+    adults,
+    children,
+    babies,
+    booking_changes,
+    previous_cancellations,
+    previous_bookings_not_canceled,
+    days_in_waiting_list,
+    adr,
+    required_car_parking_spaces,
+    total_of_special_requests,
+    reservation_status_date
+
+  FROM `hotel-bookings-de`.`bookings`.`raw_bookings`
+)
+SELECT
+  booking_id,
+  date_id,
+  hotel_id,
+  guest_id,
+  booking_details_id,
+  entity_id,
+  is_canceled,
+  lead_time,
+  stays_in_weekend_nights,
+  stays_in_week_nights,
+  adults,
+  children,
+  babies,
+  booking_changes,
+  previous_cancellations,
+  previous_bookings_not_canceled,
+  days_in_waiting_list,
+  adr,
+  required_car_parking_spaces,
+  total_of_special_requests,
+  reservation_status_date
+FROM bookings_cte
+    );
+  
+[0m00:26:48.752662 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=hotel-bookings-de&j=bq:US:685bcec6-8520-4106-89d9-63448fcf3df1&page=queryresults
+[0m00:26:52.166244 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '77ca98a0-5b0b-40e8-b663-0f35005bcb07', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f24ee3e7bb0>]}
+[0m00:26:52.168012 [info ] [Thread-1 (]: 6 of 6 OK created sql table model bookings.fct_bookings ........................ [[32mCREATE TABLE (86.4k rows, 23.0 MiB processed)[0m in 4.25s]
+[0m00:26:52.170084 [debug] [Thread-1 (]: Finished running node model.bookings.fct_bookings
+[0m00:26:52.173635 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m00:26:52.174750 [debug] [MainThread]: Connection 'model.bookings.fct_bookings' was properly closed.
+[0m00:26:52.175644 [info ] [MainThread]: 
+[0m00:26:52.177291 [info ] [MainThread]: Finished running 6 table models in 0 hours 0 minutes and 21.57 seconds (21.57s).
+[0m00:26:52.181757 [debug] [MainThread]: Command end result
+[0m00:26:52.262478 [info ] [MainThread]: 
+[0m00:26:52.263936 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m00:26:52.265310 [info ] [MainThread]: 
+[0m00:26:52.266897 [info ] [MainThread]: Done. PASS=6 WARN=0 ERROR=0 SKIP=0 TOTAL=6
+[0m00:26:52.269748 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 25.282267, "process_user_time": 7.614004, "process_kernel_time": 1.094065, "process_mem_max_rss": "239876", "process_out_blocks": "3856", "process_in_blocks": "0"}
+[0m00:26:52.273190 [debug] [MainThread]: Command `dbt run` succeeded at 00:26:52.272737 after 25.29 seconds
+[0m00:26:52.275376 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2513a30190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f24ee6ebf40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f251246eb00>]}
+[0m00:26:52.278276 [debug] [MainThread]: Flushing usage events

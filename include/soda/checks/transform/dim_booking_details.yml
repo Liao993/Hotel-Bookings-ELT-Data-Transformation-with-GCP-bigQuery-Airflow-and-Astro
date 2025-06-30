@@ -1,0 +1,63 @@
+# dim_booking_details.yml
+checks for dim_booking_details:
+  # Check fails when required columns are missing, or when data types are incorrect
+  - schema:
+      fail:
+        when required column missing:
+          [
+            booking_detail_id,
+            market_segment,
+            distribution_channel,
+            meal,
+            deposit_type,
+            reservation_status,
+          ]
+        when wrong column type:
+          booking_detail_id: string
+          market_segment: string
+          distribution_channel: string
+          meal: string
+          deposit_type: string
+          reservation_status: string
+
+  # Check fails when booking_detail_id is not unique
+  - duplicate_count(booking_detail_id) = 0:
+      name: All booking_detail_ids are unique
+
+  # Check fails when any NULL values exist in booking_detail_id
+  - missing_count(booking_detail_id) = 0:
+      name: All booking details have a key
+
+  # Check fails when market_segment contains unexpected values
+  - invalid_count(market_segment) = 0:
+      name: All market segments are valid
+      valid values: [
+          "Direct",
+          "Corporate",
+          "Online TA",
+          "Offline TA/TO",
+          "Complementary",
+          "Groups",
+          "Undefined",
+          "Unknown",
+        ] # Adjust based on your data
+
+  # Check fails when distribution_channel contains unexpected values
+  - invalid_count(distribution_channel) = 0:
+      name: All distribution channels are valid
+      valid values: ["Direct", "Corporate", "TA/TO", "Undefined", "Unknown"] # Adjust based on your data
+
+  # Check fails when meal contains unexpected values
+  - invalid_count(meal) = 0:
+      name: All meals are valid
+      valid values: ["BB", "FB", "HB", "SC", "Undefined", "Unknown"] # Adjust based on your data
+
+  # Check fails when deposit_type contains unexpected values
+  - invalid_count(deposit_type) = 0:
+      name: All deposit types are valid
+      valid values: ["No Deposit", "Non Refund", "Refundable", "Unknown"] # Adjust based on your data
+
+  # Check fails when reservation_status contains unexpected values
+  - invalid_count(reservation_status) = 0:
+      name: All reservation statuses are valid
+      valid values: ["Check-Out", "Canceled", "No-Show", "Unknown"] # Adjust based on your data

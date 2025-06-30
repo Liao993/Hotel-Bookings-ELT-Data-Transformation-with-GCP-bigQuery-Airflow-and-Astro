@@ -1,0 +1,28 @@
+# dim_hotel_room.yml
+checks for dim_hotel_room:
+  # Check fails when required columns are missing, or when data types are incorrect
+  - schema:
+      fail:
+        when required column missing: [hotel_room_id, hotel_name, room_type]
+        when wrong column type:
+          hotel_room_id: string
+          hotel_name: string
+          room_type: string
+
+  # Check fails when hotel_room_id is not unique
+  - duplicate_count(hotel_room_id) = 0:
+      name: All hotel_room_ids are unique
+
+  # Check fails when any NULL values exist in hotel_room_id
+  - missing_count(hotel_room_id) = 0:
+      name: All hotel rooms have a key
+
+  # Check fails when hotel_name contains unexpected values
+  - invalid_count(hotel_name) = 0:
+      name: All hotel names are valid
+      valid values: ["Resort Hotel", "City Hotel"] # Adjust based on your data
+
+  # Check fails when room_type contains unexpected values
+  - invalid_count(room_type) = 0:
+      name: All room types are valid
+      valid values: ["A", "B", "C", "D", "E", "F", "G", "H", "I", "K", "L", "P"] # Adjust based on your data

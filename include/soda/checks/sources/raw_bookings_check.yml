@@ -1,0 +1,71 @@
+checks for raw_bookings:
+  - schema: # <--- ADD THE HYPHEN BACK HERE! This signifies it's an item in a list of checks.
+      fail:
+        when required column missing:
+          [
+            hotel,
+            is_canceled,
+            lead_time,
+            arrival_date_year,
+            arrival_date_month,
+            arrival_date_week_number,
+            arrival_date_day_of_month,
+            stays_in_weekend_nights,
+            stays_in_week_nights,
+            adults,
+            children,
+            babies,
+            meal,
+            country,
+            market_segment,
+            distribution_channel,
+            is_repeated_guest,
+            previous_cancellations,
+            previous_bookings_not_canceled,
+            reserved_room_type,
+            assigned_room_type,
+            booking_changes,
+            deposit_type,
+            agent,
+            company,
+            days_in_waiting_list,
+            customer_type,
+            adr,
+            required_car_parking_spaces,
+            total_of_special_requests,
+            reservation_status,
+            reservation_status_date,
+          ]
+        when wrong column type:
+          hotel: string
+          is_canceled: int64
+          lead_time: int64
+          arrival_date_year: int64
+          arrival_date_month: string
+          arrival_date_week_number: int64
+          arrival_date_day_of_month: int64
+          stays_in_weekend_nights: int64
+          stays_in_week_nights: int64
+          adults: int64
+          children: int64
+          babies: int64
+          meal: string
+          country: string
+          market_segment: string
+          distribution_channel: string
+          is_repeated_guest: int64
+          previous_cancellations: int64
+          previous_bookings_not_canceled: int64
+          reserved_room_type: string
+          assigned_room_type: string
+          booking_changes: int64
+          deposit_type: string
+          agent: float64
+          company: float64
+          days_in_waiting_list: int64
+          customer_type: string
+          adr: float64
+          required_car_parking_spaces: int64
+          total_of_special_requests: int64
+          reservation_status: string
+          reservation_status_date: string
